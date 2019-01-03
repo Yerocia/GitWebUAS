@@ -1,0 +1,146 @@
+h1
+{
+	text-align : center;
+}
+
+body
+{
+	background: #FFDAB9;
+	font-family: arial;
+	font-size: 15px;
+}
+
+.container
+{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #C9F0FF;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.header
+{
+	border: 1px solid #F08080;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* Grid */
+
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item 
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Main */
+
+.left
+{
+	width: 250px;
+	border: 1px solid #F08080;
+	background: #FFA500;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.middle
+{
+	width: 600px;
+	border: 1px solid #F08080;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.right
+{
+	width: auto;
+	border: 1px solid #F08080;
+	background: #FFA500;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.footer
+{
+	text-align: center;
+	clear: both;
+	border: 1px solid #F08080;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* untuk ukuran 1080px kebawah */
+
+@media screen and (max-width: 1080px)
+{
+	.container 
+	{
+		width: 100%;
+	}
+	
+	.left 
+	{
+		width: 25%;
+		background: #FFD700;
+	}
+	
+	.middle 
+	{
+		width: 60%;
+		float: right;
+	}
+	
+	.right 
+	{
+		clear: both;
+		background: #FFA07A;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+
+/* untuk ukuran layar 700px kebawah */
+
+@media screen and (max-width: 780px) 
+{
+	.header 
+	{
+		text-align: center;
+	}
+	
+	.left
+	{
+		width: auto;
+		float: none;
+	}
+	
+	.middle 
+	{
+		width: auto;
+		float: none;
+		background: #FFFFE0;
+	}
+	
+	.right 
+	{
+		width: auto;
+		float: none;
+	}
+}
